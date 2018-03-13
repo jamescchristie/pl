@@ -1,0 +1,130 @@
+$primary-color: #FFF;
+$secondary-color: #e90052;
+$tertiary-text-color: #4a224e;
+$main-width: 300px;
+$main-height: 600px;
+
+$font-stack: Arial, Helvetica, sans-serif;
+
+body {
+	color: $primary-color;
+	background-color: $primary-color;
+	font-family: $font-stack;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: $main-width;
+	height: $main-height;
+	border: 1px solid #ccc;
+
+	.player-select {
+	   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+	   height: 29px;
+	   overflow: hidden;
+	   width: 240px;
+	   position: absolute;
+	   left: 20px;
+	   top: 10px;
+	}
+
+	.player-select select {
+	   background: transparent;
+	   border: none;
+	   font-size: 14px;
+	   height: 29px;
+	   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+	   width: 268px;
+	}
+
+	.player-select.slate {
+	   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+	   height: 34px;
+	   width: 240px;	   
+	}
+
+	.player-select.slate.hidden {
+	   visibility: hidden;
+	}
+
+	.player-select.slate select {
+	   border: 1px solid #ccc;
+	   font-size: 16px;
+	   height: 34px;
+	   width: 268px;
+	}
+
+}
+
+.player-box {
+	width: $main-width;
+	height: 295px;
+	background: url('../assets/background pattern.png') no-repeat 55px 75px;
+}
+
+.player-picture {
+	height: 210px;
+	position: relative;
+	top: 295px - 210px;
+	left: 15px;
+}
+
+.player-stats {
+	width: $main-width - 15px;
+	height: 305px;
+	background-color: $secondary-color;
+	padding-left: 15px;
+
+	.player-club {
+		width: 100px;
+		height: 100px;
+		background: url('../assets/badges_sprite.png') -500px -1000px;
+		border-radius: 50px;
+		position: relative;
+		float: right;
+		margin-right: 10px;
+		margin-top: -125px;
+	}
+
+	h1, h2, ul li {
+		font-weight: 100;
+	}
+
+	h1, h2 {
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 1.2em;
+		padding-top: 20px;
+	}
+
+	h2 {
+		font-size: 1em;
+		padding-top: 10px;
+	}
+
+	ul {
+		display: inline;
+	}
+
+	ul li {
+		display: block;
+		background-color: $primary-color;
+		width: 268px;
+		height: 30px;
+		padding-top: 10px;
+		color: $tertiary-text-color;
+		margin-bottom: 2px;
+		text-indent: 10px;
+		box-shadow: 1px 2px 4px #666;
+	}
+
+	ul li span {
+		display: inline-block;
+		float: right;
+		margin-right: 10px;
+
+	}
+}

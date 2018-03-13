@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Player Stats Component</title>
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div  class='wrapper'>
+  	<div class="player-select slate hidden">
+	  	<select>
+	  		<option>Select Player</option>
+	  	</select>
+  	</div>
+
+  	<div class='player-box'>
+  		<img class='player-picture' src='assets/p4916.png' />
+  	</div>
+
+  	<div class="player-stats">
+  		<h1 class='player-name'>Toby Alderweireld</h1>
+  		<h2 class='player-position'>Defender</h2>
+  		<div class='player-club' ></div>
+
+  		<ul class='player-stats-list'>
+  			<li class='player-stat'>Appearances <span class='appearances'>80</span></li>
+  			<li class='player-stat'>Goals <span class='goals'>5</span></li>
+  			<li class='player-stat'>Assists <span class='assists'>2</span></li>
+  			<li class='player-stat'>Goals per match <span class='gpm'>0.06</span></li>
+  			<li class='player-stat'>Passes per minute <span class='ppm'>0.26</span></li>
+  		</ul> 
+  	</div>
+
+  </div>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/stat-component.js"></script>
+  
+</body>
+</html>

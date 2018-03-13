@@ -1,0 +1,90 @@
+body {
+  color: #FFF;
+  background-color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  width: 300px;
+  height: 600px;
+  border: 1px solid #ccc; }
+  .wrapper .player-select {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    position: absolute;
+    left: 20px;
+    top: 10px; }
+  .wrapper .player-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    /* If you add too much padding here, the options won't show in IE */
+    width: 268px; }
+  .wrapper .player-select.slate {
+    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+    height: 34px;
+    width: 240px; }
+  .wrapper .player-select.slate.hidden {
+    visibility: hidden; }
+  .wrapper .player-select.slate select {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 34px;
+    width: 268px; }
+
+.player-box {
+  width: 300px;
+  height: 295px;
+  background: url("../assets/background pattern.png") no-repeat 55px 75px; }
+
+.player-picture {
+  height: 210px;
+  position: relative;
+  top: 85px;
+  left: 15px; }
+
+.player-stats {
+  width: 285px;
+  height: 305px;
+  background-color: #e90052;
+  padding-left: 15px; }
+  .player-stats .player-club {
+    width: 100px;
+    height: 100px;
+    background: url("../assets/badges_sprite.png") -500px -1000px;
+    border-radius: 50px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: -125px; }
+  .player-stats h1, .player-stats h2, .player-stats ul li {
+    font-weight: 100; }
+  .player-stats h1, .player-stats h2 {
+    margin: 0 auto; }
+  .player-stats h1 {
+    font-size: 1.2em;
+    padding-top: 20px; }
+  .player-stats h2 {
+    font-size: 1em;
+    padding-top: 10px; }
+  .player-stats ul {
+    display: inline; }
+  .player-stats ul li {
+    display: block;
+    background-color: #FFF;
+    width: 268px;
+    height: 30px;
+    padding-top: 10px;
+    color: #4a224e;
+    margin-bottom: 2px;
+    text-indent: 10px;
+    box-shadow: 1px 2px 4px #666; }
+  .player-stats ul li span {
+    display: inline-block;
+    float: right;
+    margin-right: 10px; }
